@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppLivrus</string>
+
+    <string-array name="spinner">
+        <item>Em leitura</item>
+        <item>Em pausa</item>
+        <item>Concluido</item>
+
+    </string-array>
+
+</resources>

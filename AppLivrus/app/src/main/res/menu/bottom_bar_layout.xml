@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bt_biblioteca"
+        android:title="Biblioteca"
+        android:icon="@drawable/library" />
+
+    <item android:id="@+id/bt_em_espera"
+        android:title="Na fila"
+        android:icon="@drawable/livro_fila" />
+
+    <item android:id="@+id/bt_em_leitura"
+        android:title="Em Leitura"
+        android:icon="@drawable/book_open_page_variant" />
+
+
+    <item android:id="@+id/bt_concluido"
+        android:title="Concluído"
+        android:icon="@drawable/trophy"/>
+
+</menu>

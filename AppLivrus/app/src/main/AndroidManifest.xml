@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="roberth.com.applivrus">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+
+        <activity
+            android:name=".app.LoginActivity"
+            android:label="   ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ListaLivrosActivity"
+            android:label="Meus Livros" />
+        <activity
+            android:name=".app.FormularioLivroActivity"
+            android:label="Informações do Livro"
+            android:parentActivityName=".app.ListaLivrosActivity" />
+        <activity
+            android:name=".app.LivrosStatus"
+            android:label="Progresso e avaliação"
+            android:parentActivityName=".app.ListaLivrosActivity" />
+        <activity
+            android:name=".app.ListaLivrosPdfActivity"
+            android:label="Downloads"
+            android:parentActivityName=".app.ListaLivrosActivity" />
+        <activity android:name=".app.LeitorPdfActivity" />
+        <activity
+            android:name=".app.AnotacoesActivity"
+            android:label="Anotações"/>
+    </application>
+
+</manifest>
